@@ -1,0 +1,42 @@
+@media (max-width: 1060px) {
+  .cow-main {
+    width: 95%;
+  }
+
+  .cow-box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 810px) {
+  .cow-main{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cow-box {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 555px) {
+  html{
+    font-size: 60%;
+  }
+
+  .selection{
+    width: 95%;
+  }
+
+  .actor-img{
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .cow-box {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cow{
+    width: 100%;
+  }
+}

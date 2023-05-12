@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 65.5%;
+}
+
+.main {
+  height: 100vh;
+  border: 1px solid rgb(0, 0, 0);
+  background-image: url(img/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* selection part */
+.selection {
+  max-width: 50rem;
+  border: 2px solid gold;
+  margin: 3rem auto;
+  padding: 1rem 1rem 2rem 1rem;
+  background-color: aliceblue;
+}
+
+.selection-h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.name {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.actor-div {
+  overflow: hidden;
+}
+
+.actor-img {
+  width: 15rem;
+  height: 15rem;
+  transition: all 0.3s;
+}
+
+.actor-img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.description{
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* cow part */
+.cow-main {
+  max-width: 100rem;
+  border: 2px solid rgb(179, 179, 179);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem;
+  gap: 2rem;
+  background-color: rgb(234, 240, 240);
+}
+
+.cow-title {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.cow-box {
+  border: 2px solid rgb(51, 255, 0);
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.cow {
+  width: 10rem;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+
+.cow:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
