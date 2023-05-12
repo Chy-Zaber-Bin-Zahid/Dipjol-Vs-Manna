@@ -23,6 +23,10 @@
     font-size: 60%;
   }
 
+  .main{
+    padding: 10rem 0;
+  }
+
   .selection{
     width: 95%;
   }
