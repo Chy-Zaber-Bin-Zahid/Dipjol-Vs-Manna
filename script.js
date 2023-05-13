@@ -14,6 +14,19 @@ function select(a) {
 }
 
 // cow part
+let currentAudio = null;
+
+function playSound(volume) {
+  if (currentAudio) {
+    // Pause the currently playing audio
+    currentAudio.pause();
+    currentAudio.currentTime = 0; // Reset to beginning
+  }
+  const audio = new Audio("/cow.wav");
+  audio.volume = volume;
+  audio.play();
+  currentAudio = audio;
+}
 
 // const description = document.querySelector(".description");
 const cowAll = document.querySelectorAll(".cow");
@@ -23,6 +36,7 @@ const people = document.querySelector(".peo");
 // Add click event listener to each button
 cowAll.forEach((button) => {
   button.addEventListener("click", () => {
+    playSound(0.5);
     if (
       description.textContent !== "" &&
       description.textContent ===
