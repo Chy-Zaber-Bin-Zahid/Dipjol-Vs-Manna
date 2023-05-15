@@ -22,7 +22,7 @@ function playSound(volume) {
     currentAudio.pause();
     currentAudio.currentTime = 0; // Reset to beginning
   }
-  const audio = new Audio("/cow.wav");
+  const audio = new Audio("/cowm.mp3");
   audio.volume = volume;
   audio.play();
   currentAudio = audio;
