@@ -22,7 +22,9 @@ function playSound(volume) {
     currentAudio.pause();
     currentAudio.currentTime = 0; // Reset to beginning
   }
-  const audio = new Audio("https://chy-zaber-bin-zahid.github.io/Dipjol-Vs-Manna/cowm.mp3");
+  const audio = new Audio(
+    "https://chy-zaber-bin-zahid.github.io/Dipjol-Vs-Manna/cowm.mp3"
+  );
   audio.volume = volume;
   audio.play();
   currentAudio = audio;
@@ -48,3 +50,24 @@ cowAll.forEach((button) => {
     }
   });
 });
+
+//farm status check
+const farm = () => {
+  let dipFarm = document.querySelector(".dip");
+  let peoFarm = document.querySelector(".peo");
+
+  let dipImg = dipFarm.querySelector("img");
+  let peoImg = peoFarm.querySelector("img");
+  if (dipImg) {
+    document.querySelector(".d").style.display = "none";
+  } else {
+    document.querySelector(".d").style.display = "block";
+  }
+  if (peoImg) {
+    document.querySelector(".m").style.display = "none";
+  } else {
+    document.querySelector(".m").style.display = "block";
+  }
+};
+
+setInterval(farm, 100);

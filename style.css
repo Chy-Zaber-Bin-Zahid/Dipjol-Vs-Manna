@@ -91,16 +91,29 @@ html {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
-  padding: 1rem;
+  padding: 2rem;
+  position: relative;
 }
 
 .cow {
   width: 10rem;
   transition: all 0.3s;
   border-radius: 5px;
+  
 }
 
 .cow:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+
+.cow-p{
+  font-size: 1.6rem;
+  color: gray;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
 }
